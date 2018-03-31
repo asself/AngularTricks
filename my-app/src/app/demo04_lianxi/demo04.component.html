@@ -1,0 +1,18 @@
+<table border="1px" width="400px">
+  <thead>
+    <tr>
+      <th>姓名</th>
+      <th>分数</th>
+      <th>性别</th>
+    </tr>
+  </thead>
+  <tbody>
+   <ng-container *ngFor="let classmate of student">
+     <tr *ngIf="classmate.score>60">
+       <td>{{classmate.name}}</td>
+       <td>{{classmate.score}}</td>
+       <td>{{classmate.sex}}</td>
+     </tr>
+   </ng-container>
+  </tbody>
+</table>

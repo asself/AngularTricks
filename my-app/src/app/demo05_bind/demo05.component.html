@@ -1,0 +1,14 @@
+<h3>this is demo05 the event bind and data double bind</h3>
+<!--事件绑定-->
+<button (click)="handelClick()">
+   Can Click
+</button>
+
+<!--属性绑定-->
+<a href="http://tmooc.cn">TMOOC</a>
+<a [href]="myHref">BAIDu</a>
+<a [href]="'http://'+testHref">BAIDu</a>
+
+<!--双向数据绑定-->
+<input type="text" [(ngModel)]="uname"/>
+<h2>{{uname}}</h2>

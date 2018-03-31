@@ -1,0 +1,29 @@
+<h1>hello demo03</h1>
+<p>it is a paragraph</p>
+<!--use mustache or interpolation-->
+<h2>{{3+5}}</h2>
+<!--directive-->
+<!--不能同时将多个结构型指令用在一个组件或者标签-->
+<!--ng-container可解决此问题-->
+<ul>
+   <ng-container
+     *ngFor="let tmp of list">
+      <li *ngIf="tmp>100">
+          {{tmp}}
+      </li>
+   </ng-container>
+</ul>
+<ul>
+  <li *ngFor="let tmp of list;let tmpIndex=index">
+    {{'now index is\t'+tmpIndex+'\tvalue is\t'+tmp}}
+  </li>
+</ul>
+<!--多重分支判断-->
+<div [ngSwitch]="answer">
+  <p *ngSwitchCase="'a'">A</p>
+  <p *ngSwitchCase="'b'">B</p>
+  <p *ngSwitchCase="'c'">C</p>
+  <p *ngSwitchCase="'d'">D</p>
+  <p *ngSwitchCase="'e'">E</p>
+  <p *ngSwitchDefault>请输入正确值</p>
+</div>
