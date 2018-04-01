@@ -2,7 +2,9 @@ import { Component, OnInit ,Input } from '@angular/core'
 
 @Component({
   selector: 'demo13-son',
-  template:``
+  template:`
+    <h2>这是demo13Son</h2>
+  `
 })
 
 export class Demo13SonComponent implements OnInit{

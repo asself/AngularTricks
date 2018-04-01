@@ -1,0 +1,16 @@
+@nice-blue: #5B83AD;
+@light-blue: @nice-blue+#111;
+@big-red: #108ee9;
+@lig-green: @big-red+#111;
+.header {
+  color: @light-blue;
+
+}
+:host h2{
+  color: @big-red;
+}
+
+:host ::ng-deep h2{
+  color: @lig-green;
+}
+

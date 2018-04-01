@@ -23,7 +23,7 @@ import {Demo11Component} from './demo11_service/demo11.component'
 import {LogService} from './demo11_service/log.service'
 import {Demo13ParentComponent} from './demo13_p_s/demo13_parent.component'
 import {Demo13SonComponent} from './demo13_p_s/demo13_son.component'
-
+import {Demo13LianxiComponent} from  './demo13_p_s/demo13_lianxi.compoenent'
 //在模块中声明组件类
 @NgModule({
   declarations: [
@@ -41,7 +41,8 @@ import {Demo13SonComponent} from './demo13_p_s/demo13_son.component'
     Demo09Component,
     Demo11Component,
     Demo13ParentComponent,
-    Demo13SonComponent
+    Demo13SonComponent,
+    Demo13LianxiComponent
   ],
   imports: [
     BrowserModule,
